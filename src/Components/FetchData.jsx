@@ -62,7 +62,7 @@ const FetchData = () => {
     }
 
     return (
-        <div className='bg-div rounded-md p-5 w-[400px] max-w-[500px]'>
+        <div className='bg-div rounded-md p-5 w-[500px] max-w-[500px]'>
             <div className="flex items-center justify-between gap-5">
                 <input className='p-2 rounded-lg outline-none w-full' type="text" placeholder='Enter City Name' onChange={(e) => setName(e.target.value)} />
                 <div className="cursor-pointer text-zinc-400 bg-white p-2 rounded-full" onClick={handelSubmit}><FaSearch /></div>
@@ -78,7 +78,6 @@ const FetchData = () => {
                 <h1 className='text-white capitalize font-bold text-[35px]'>{data.name}</h1>
             </div>
             <div className="flex justify-between items-center text-white">
-
                 <div className='mt-8 flex items-center gap-3'>
                     <img className='w-[35px] h-[30px]' src={humidityImg} alt="" />
                     <div>
@@ -86,7 +85,6 @@ const FetchData = () => {
                         <h1 className='text-[20px]'>Humidity</h1>
                     </div>
                 </div>
-
                 <div className='mt-8 flex items-center gap-3'>
                     <img className='w-[35px] h-[30px]' src={windImg} alt="" />
                     <h1 className='text-[20px]'>{data.speed} km/h</h1>
