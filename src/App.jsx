@@ -4,7 +4,7 @@ import FetchData from './Components/FetchData'
 const App = () => {
   return (
     <div className='h-screen bg-body'>
-      <div className="container flex items-center justify-center h-full">
+      <div className="container px-[20px] flex items-center justify-center h-full">
         <FetchData />
       </div>
     </div>
